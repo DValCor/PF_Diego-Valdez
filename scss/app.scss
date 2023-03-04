@@ -1,5 +1,13 @@
-//Tipografías
+//Tipography
 @import "./general/fonts.scss";
+
+//Reset
+@import "./general/reset.scss";
+
+//Grid statement
+@import "./general/grid-container.scss";
+//Utilities
+@import "./general/colors.scss";
 
 //Pages
 @import "./pages/index.scss";

@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap");
+h1 {
+  font-family: "Asap"; }
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Jost"; }
+
 * {
-  font-family: 'Asap'; }
+  margin: 0;
+  padding: 0; }
 
 .grid_container {
   display: grid;
@@ -55,6 +68,10 @@
       transition: all 0.5s ease-in-out; }
   .centered-flex .move-txt {
     transition: all 0.5s ease-in-out; }
+    .centered-flex .move-txt H3 {
+      font-weight: 500; }
+    .centered-flex .move-txt P {
+      font-weight: 300; }
   .centered-flex .button-buy {
     background-color: #424242;
     color: #fff;
@@ -64,7 +81,7 @@
     cursor: pointer;
     transition: all 0.3s ease; }
     .centered-flex .button-buy:hover {
-      background-color: #000;
+      background-color: #0000;
       color: #fff;
       transform: translateY(-3px); }
 
@@ -271,7 +288,7 @@
     .contact .contact-form textarea {
       margin-bottom: 10px;
       padding: 10px;
-      border: 1px solid #b6b6b6;
+      border: 1px solid #424242;
       border-radius: 5px;
       font-size: 16px; }
     .contact .contact-form textarea {
@@ -356,10 +373,14 @@
 
 .product-card {
   border-radius: 10px;
-  background-color: #f8f9fa;
+  background-color: #fff;
   margin: 20px 0 0 0;
   padding: 20px;
   transition: transform 0.2s ease-in-out; }
+  .product-card H4 {
+    font-weight: 500; }
+  .product-card P {
+    font-weight: 300; }
   .product-card img {
     width: 250px;
     transition: transform 0.2s ease-in-out; }
@@ -367,7 +388,7 @@
       transform: scale(1.03); }
   .product-card:hover {
     transform: scale(1.03);
-    background-color: #fff;
+    background-color: #f8f9fa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
   .product-card .button-buy {
     background-color: #424242;
@@ -378,6 +399,5 @@
     cursor: pointer;
     transition: all 0.3s ease; }
     .product-card .button-buy:hover {
-      background-color: #000;
-      color: #fff;
+      background-color: #0000;
       transform: translateY(-3px); }

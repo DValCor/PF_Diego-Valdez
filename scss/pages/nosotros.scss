@@ -13,11 +13,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: $clean-white;
   }
 
   .no-parallax {
-    background-color: #7e57c2;
+    background-color: $violet-0;
     z-index: 999;
 
     h1 {
