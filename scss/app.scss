@@ -1,0 +1,16 @@
+//Tipografías
+@import "./general/fonts.scss";
+
+//Pages
+@import "./pages/index.scss";
+@import "./pages/productos.scss";
+@import "./pages/nosotros.scss";
+@import "./pages/comunidad.scss";
+@import "./pages/contacto.scss";
+
+
+//Layout
+@import "./layout/header-nav.scss";
+@import "./layout/footer.scss";
+@import "./layout/banner.scss";
+@import "./layout/product-card.scss";

@@ -1,0 +1,102 @@
+.contact {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    .contact-form {
+        height: 700px;
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .client-data {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #b6b6b6;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button[type="submit"] {
+            background-color: #7e57c2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #673ab7;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    section {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    section {
+        max-width: 500px;
+        padding: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    .contact-form button[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-form label {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-form h1 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+}

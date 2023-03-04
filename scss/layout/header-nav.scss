@@ -1,0 +1,14 @@
+.rrss-icon {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.rrss-icon:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    border: none;
+  }
+}

@@ -1,0 +1,89 @@
+/*----NOSOTROS----*/
+
+.nosotros {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+
+  section {
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .no-parallax {
+    background-color: #7e57c2;
+    z-index: 999;
+
+    h1 {
+      text-align: center;
+      font-size: 80px;
+    }
+  }
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after {
+  background: url("../imgs/mapa/map_desktop.jpg");
+  background-size: cover;
+}
+
+.container-contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.no-parallax.contact-info {
+  div {
+    text-align: center;
+    width: 511px;
+    gap: 82px;
+
+    img {
+      width: 30%;
+      height: auto;
+      margin: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .no-parallax {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  .bg::after {
+    background: url("../imgs/mapa/map_mobile.jpg");
+    background-size: cover;
+  }
+
+  .container-contact-info {
+    flex-direction: column;
+  }
+
+  #map-icon-phone,
+  #map-icon-whatsapp,
+  #map-icon-service {
+    width: 150px;
+  }
+}
