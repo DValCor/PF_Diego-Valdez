@@ -1,0 +1,30 @@
+/*Banner*/
+@media only screen and (min-width: 992px) {
+  .img-fluid {
+    content: url("./imgs/banner/Banner1_mobile.jpg");
+
+  }
+
+  .img-fluid {
+    content: url("./imgs/banner/Banner2_mobile.jpg");
+  }
+
+  .img-fluid3 {
+    content: url("./imgs/banner/Banner3_mobile.jpg");
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .img-fluid {
+    content: url("./imgs/banner/Banner1_mobile.jpg");
+  }
+
+  .img-fluid {
+    content: url("./imgs/banner/Banner2_mobile.jpg");
+  }
+
+  .img-fluid {
+    content: url("./imgs/banner/Banner3_mobile.jpg");
+  }
+
+}
