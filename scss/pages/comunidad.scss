@@ -1,4 +1,6 @@
-//Banner
+/*Comunidad*/
+
+/*Banner Comunidad*/
 .slider {
     position: relative;
     width: 1900px;
@@ -26,6 +28,8 @@
         }
     }
 }
+
+
 
 @keyframes slide {
     0% {
@@ -57,7 +61,7 @@
     }
 }
 
-//Main Comunidad
+/*Main Comunidad*/
 .file-container {
     margin: 80px 0;
     display: flex;
@@ -72,7 +76,6 @@
         .file {
             margin: 20px;
             width: 500px;
-            height: 300px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -90,16 +93,53 @@
                 border-radius: 10px 10px 0 0;
             }
 
-            h2 {
-                margin-top: 10px;
-                font-size: 24px;
+            div{
+                width: 60%;
             }
-
             p {
                 margin: 10px;
-                font-size: 18px;
+                font-size: 16px;
                 text-align: center;
+                color: $violet-0;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
             }
+            &:hover p{
+                opacity: 1;
+              }
         }
     }
 }
+
+/*Mediaquery Banner Comunidad*/
+
+
+@media only screen and (max-width: 767px) {
+    .slider {
+      width: 100%;
+      height: auto;
+    }
+    #com-1-img img {
+      content: url('../imgs/banners Community/Banner 1_mobile.png');
+    }
+    #com-2-img img {
+      content: url('../imgs/banners Community/Banner 2_mobile.png');
+    }
+    #com-3-img img {
+      content: url('../imgs/banners Community/Banner 3_mobile.png');
+    }
+  }
+  
+  /*@media only screen and (max-width: 480px) {
+    .file-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .file-row {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }*/

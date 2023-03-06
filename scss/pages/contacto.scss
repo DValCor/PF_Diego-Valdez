@@ -1,102 +1,37 @@
+/*Contacto*/
+
 .contact {
     background-color: $clean-white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
 
-    .contact-form {
-        height: 700px;
-        width: 600px;
-        margin: 0 auto;
-        padding: 20px;
+    .banner-contact {
+        margin: 0 0 20px 0;
+        position: relative;
 
         h1 {
-            text-align: center;
-            margin-bottom: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $black-0;
         }
-
-        .client-data {
-            display: flex;
-            flex-direction: column;
-
-            label {
-                margin-bottom: 5px;
-                font-weight: bold;
-            }
-        }
-
-        input,
-        select,
-        textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid $black-0;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        button[type="submit"] {
+    }
+    .btn-contact-form{
+        margin-top: 15px;
+        background-color: $violet-1;
+        border: none;
+        &:hover{
             background-color: $violet-0;
-            color: $clean-white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-
-            &:hover {
-                background-color: $violet-1;
-            }
         }
     }
 }
 
-@media only screen and (max-width: 767px) {
-    section {
-        padding: 10px;
-    }
 
-    input,
-    select,
-    textarea {
-        font-size: 14px;
-    }
-
-    .contact-form button[type="submit"] {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    section {
-        max-width: 500px;
-        padding: 15px;
-    }
-
-    input,
-    select,
-    textarea {
-        font-size: 16px;
-    }
-
-    .contact-form button[type="submit"] {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .contact-form label {
-        display: block;
-        text-align: center;
-    }
-
-    .contact-form h1 {
-        font-size: 26px;
-        font-weight: 700;
+@media screen and (max-width: 768px) {
+    .banner-contact img {
+        content: url("../imgs/contacto/Banner_Contacto-mobile.jpg");
     }
 }
