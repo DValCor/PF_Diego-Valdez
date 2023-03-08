@@ -138,7 +138,7 @@
 
   /*Mediaquery para file-row y file-container en pantallas pequeñas*/ 
  
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .file-container, .file-row {
       display: flex;
       align-items: center;

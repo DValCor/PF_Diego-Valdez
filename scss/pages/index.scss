@@ -4,3 +4,18 @@
         margin-bottom: 100px;
     }
 }
+
+
+
+/* Media Queries Mobile */
+@media only screen and (max-width: 991px) {
+  .carousel-item img.banner-1 {
+    content: url("../imgs/banner/Banner1_mobile.jpg");
+  }
+  .carousel-item img.banner-2 {
+    content: url("../imgs/banner/Banner2_mobile.jpg");
+  }
+  .carousel-item img.banner-3 {
+    content: url("../imgs/banner/Banner3_mobile.jpg");
+  }
+}

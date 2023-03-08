@@ -30,8 +30,14 @@
 }
 
 
-@media screen and (max-width: 768px) {
-    .banner-contact img {
-        content: url("../imgs/contacto/Banner_Contacto-mobile.jpg");
-    }
+@media only screen and (max-width: 991px) {
+    .banner-contact {
+        img {
+            content: url("../imgs/contacto/Banner_Contacto-mobile.jpg");
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+        }
+    } 
 }

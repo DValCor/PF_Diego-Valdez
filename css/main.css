@@ -42,6 +42,15 @@ body {
   margin-top: 100px;
   margin-bottom: 100px; }
 
+/* Media Queries Mobile */
+@media only screen and (max-width: 991px) {
+  .carousel-item img.banner-1 {
+    content: url("../imgs/banner/Banner1_mobile.jpg"); }
+  .carousel-item img.banner-2 {
+    content: url("../imgs/banner/Banner2_mobile.jpg"); }
+  .carousel-item img.banner-3 {
+    content: url("../imgs/banner/Banner3_mobile.jpg"); } }
+
 .centered-flex {
   display: flex;
   flex-direction: column;
@@ -110,7 +119,7 @@ body {
     #section-product5 img:hover {
       transform: scale(1.05); }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   #section-product1:hover .move-img,
   #section-product2:hover .move-img,
   #section-product3:hover .move-img,
@@ -118,7 +127,7 @@ body {
     transform: translateX(0);
     transition: none; } }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   #section-product1:hover .move-txt,
   #section-product2:hover .move-txt,
   #section-product3:hover .move-txt,
@@ -130,13 +139,13 @@ body {
 .product6:not(:hover) img {
   transform: scale(1); }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .product5:hover img,
   .product6:hover img {
     transform: scale(1);
     transition: none; } }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .product5,
   .product6 {
     margin-top: 10px; } }
@@ -192,7 +201,7 @@ body {
     height: auto;
     margin: 20px; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   .no-parallax h1 {
     font-size: 50px; }
   .bg::after {
@@ -296,7 +305,7 @@ body {
     content: url("../imgs/banners Community/Banner 3_mobile.png"); } }
 
 /*Mediaquery para file-row y file-container en pantallas pequeñas*/
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .file-container, .file-row {
     display: flex;
     align-items: center;
@@ -325,9 +334,12 @@ body {
     .contact .btn-contact-form:hover {
       background-color: #7e57c2; }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .banner-contact img {
-    content: url("../imgs/contacto/Banner_Contacto-mobile.jpg"); } }
+    content: url("../imgs/contacto/Banner_Contacto-mobile.jpg");
+    background-size: cover; }
+  .banner-contact h1 {
+    text-align: center; } }
 
 .footer {
   margin-top: 45px;

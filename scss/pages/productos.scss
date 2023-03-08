@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
 
   #section-product1:hover .move-img,
   #section-product2:hover .move-img,
@@ -98,7 +98,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
 
   #section-product1:hover .move-txt,
   #section-product2:hover .move-txt,
@@ -114,7 +114,7 @@
   transform: scale(1);
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
 
   .product5:hover img,
   .product6:hover img {
@@ -123,7 +123,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 991px) {
 
   .product5,
   .product6 {
