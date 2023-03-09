@@ -18,3 +18,11 @@ h6,
 p {
     font-family: $secondary-tipography;
 }
+
+$font-sizes: (1: 2.4rem, 2: 2.1rem, 3: 1.8rem, 4: 1.5rem, 5: 1.2rem, 6: 1rem);
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: map-get($font-sizes, $i);
+  }
+}

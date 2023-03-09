@@ -1,3 +1,19 @@
+@mixin button-buy($background, $color, $border: none) {
+    background-color: $background;
+    color: $color;
+    border: $border;
+    border-radius: 50px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $black-1;
+        transform: translateY(-3px);
+    }
+  }
+
+
+
 .card-title {
     margin: 50px 0;
     font-weight: 900;
@@ -10,7 +26,8 @@
     padding: 20px;
     transition: transform 0.2s ease-in-out;
 
-    H4 {
+    h4 {
+        font-size: map-get($font-sizes, 4);
         font-weight: 500;
     }
 
@@ -33,18 +50,8 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-    .button-buy {
-        background-color: $black-0;
-        color: $clean-white;
-        padding: 5px 20px;
-        border-radius: 50px;
-        border: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: $black-1;
-            transform: translateY(-3px);
-        }
+    .button-black {
+        @include button-buy($black-0, $clean-white);
+      }
+        
     }
-}

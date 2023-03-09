@@ -39,6 +39,7 @@
     transition: all 0.5s ease-in-out;
 
     H3 {
+      font-size: map-get($font-sizes, 3);
       font-weight: 500;
     }
 
@@ -87,31 +88,13 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
-
-  #section-product1:hover .move-img,
-  #section-product2:hover .move-img,
-  #section-product3:hover .move-img,
-  #section-product4:hover .move-img {
-    transform: translateX(0);
-    transition: none;
-  }
-}
 
 @media only screen and (max-width: 991px) {
 
-  #section-product1:hover .move-txt,
-  #section-product2:hover .move-txt,
-  #section-product3:hover .move-txt,
-  #section-product4:hover .move-txt {
-    transform: translateX(0);
-    transition: none;
+  .product5:not(:hover) img,
+  .product6:not(:hover) img {
+    transform: scale(1);
   }
-}
-
-.product5:not(:hover) img,
-.product6:not(:hover) img {
-  transform: scale(1);
 }
 
 @media only screen and (max-width: 991px) {
@@ -128,5 +111,16 @@
   .product5,
   .product6 {
     margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  #section-product1:hover .move-img,
+  #section-product2:hover .move-img,
+  #section-product3:hover .move-img,
+  #section-product4:hover .move-img {
+    transform: none;
+    transition: none;
   }
 }

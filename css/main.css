@@ -12,6 +12,24 @@ h6,
 p {
   font-family: "Jost"; }
 
+h1 {
+  font-size: 2.4rem; }
+
+h2 {
+  font-size: 2.1rem; }
+
+h3 {
+  font-size: 1.8rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.2rem; }
+
+h6 {
+  font-size: 1rem; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -89,6 +107,7 @@ body {
   .centered-flex .move-txt {
     transition: all 0.5s ease-in-out; }
     .centered-flex .move-txt H3 {
+      font-size: 1.8rem;
       font-weight: 500; }
     .centered-flex .move-txt P {
       font-weight: 300; }
@@ -120,24 +139,9 @@ body {
       transform: scale(1.05); }
 
 @media only screen and (max-width: 991px) {
-  #section-product1:hover .move-img,
-  #section-product2:hover .move-img,
-  #section-product3:hover .move-img,
-  #section-product4:hover .move-img {
-    transform: translateX(0);
-    transition: none; } }
-
-@media only screen and (max-width: 991px) {
-  #section-product1:hover .move-txt,
-  #section-product2:hover .move-txt,
-  #section-product3:hover .move-txt,
-  #section-product4:hover .move-txt {
-    transform: translateX(0);
-    transition: none; } }
-
-.product5:not(:hover) img,
-.product6:not(:hover) img {
-  transform: scale(1); }
+  .product5:not(:hover) img,
+  .product6:not(:hover) img {
+    transform: scale(1); } }
 
 @media only screen and (max-width: 991px) {
   .product5:hover img,
@@ -149,6 +153,14 @@ body {
   .product5,
   .product6 {
     margin-top: 10px; } }
+
+@media only screen and (max-width: 991px) {
+  #section-product1:hover .move-img,
+  #section-product2:hover .move-img,
+  #section-product3:hover .move-img,
+  #section-product4:hover .move-img {
+    transform: none;
+    transition: none; } }
 
 /*----NOSOTROS----*/
 .nosotros {
@@ -169,7 +181,7 @@ body {
     z-index: 999; }
     .nosotros .no-parallax h1 {
       text-align: center;
-      font-size: 80px; }
+      font-size: 2.4rem; }
 
 .parallax::after {
   content: " ";
@@ -202,8 +214,12 @@ body {
     margin: 20px; }
 
 @media only screen and (max-width: 991px) {
-  .no-parallax h1 {
-    font-size: 50px; }
+  .no-parallax {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-bottom: 100px; }
+    .no-parallax h1 {
+      font-size: 1rem; }
   .bg::after {
     background: url("../imgs/mapa/map_mobile.jpg");
     background-size: cover; }
@@ -318,10 +334,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .contact h2 {
+    font-size: 2.1rem; }
   .contact .banner-contact {
     margin: 0 0 20px 0;
     position: relative; }
     .contact .banner-contact h1 {
+      font-size: 2.4rem;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -366,7 +385,8 @@ body {
   margin: 20px 0 0 0;
   padding: 20px;
   transition: transform 0.2s ease-in-out; }
-  .product-card H4 {
+  .product-card h4 {
+    font-size: 1.5rem;
     font-weight: 500; }
   .product-card P {
     font-weight: 300; }
@@ -379,14 +399,14 @@ body {
     transform: scale(1.03);
     background-color: #f8f9fa;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-  .product-card .button-buy {
+  .product-card .button-black {
     background-color: #424242;
     color: #fff;
-    padding: 5px 20px;
-    border-radius: 50px;
     border: none;
+    border-radius: 50px;
+    padding: 5px 20px;
     cursor: pointer;
     transition: all 0.3s ease; }
-    .product-card .button-buy:hover {
+    .product-card .button-black:hover {
       background-color: #000000;
       transform: translateY(-3px); }
