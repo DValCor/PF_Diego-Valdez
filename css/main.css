@@ -58,7 +58,7 @@ body {
 
 .index H1 {
   margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
 
 /* Media Queries Mobile */
 @media only screen and (max-width: 991px) {
