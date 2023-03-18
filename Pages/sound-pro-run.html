@@ -1,69 +1,177 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content=" AURICULARES, PARLANTES, ALTAVOCES, APARATOS DE SONIDO, SISTEMAS DE SONIDO, BARRA DE SONIDO, HEADPHONES, HOME CINEMA, SUBWOOFER">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/main.css">
-        <title>Sound Pro Run - Wave Sound</title>
-        <link rel="icon" href="./imgs/Favicon/Favicon.ico" type="image/x-icon">
-        <meta name="description" content="Hacer ejercicio mientras escuchás tu música o podcast favoritos, nunca fue tan Pro.">
-    </head>
-<body>
-    <div class="container_products">
-        <!-- Seccion parallax -->
-        <section class="parallax-bg" style="background-image: url(/imgs/productos/sound pro run/banner_producto_1.jpg)"></section>
-        <section class="parallax-content">
-          <div>
-            <h1>Parallax section</h1>
-            <p>Este texto acompaña al background parallax en su propia sección</p>
-          </div>
-        </section>
-        
-        <!-- Seccion NO parallax -->
-        <section class="no-parallax-section bg-1">
-          <div class="no-parallax-content">
-            <h1>No-parallax section</h1>
-            <p>En esta sección incluimos la clase "bg-1" para otorgarle un color de fondo.</p>
-          </div>  
-        </section>
-        
-        <!-- Seccion parallax -->
-        <section class="parallax-bg" style="background-image: url(https://url-de-la-imagen)"></section>
-        <section class="parallax-content">
-          <div>
-            <h1>Parallax section</h1>
-            <p>Este texto acompaña al background parallax en su propia sección</p>
-          </div>
-        </section>
-        
-      
-        
-      </div> <!-- End Container -->
-    <footer class="footer text-center text-lg-start">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content=" AURICULARES, PARLANTES, ALTAVOCES, APARATOS DE SONIDO, SISTEMAS DE SONIDO, BARRA DE SONIDO, HEADPHONES, HOME CINEMA, SUBWOOFER"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Sound Pro Run - Wave Sound</title>
+    <link rel="icon" href="../imgs/Favicon/Favicon.ico" type="image/x-icon" />
+    <meta
+      name="description"
+      content="Hacer ejercicio mientras escuchás tu música o podcast favoritos, nunca fue tan Pro."
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
-          <div class="container d-flex justify-content-center py-5">
-            <a href="https://es-la.facebook.com/" target="_blank">
-              <img src="./imgs/iconos rrss/facebook.svg" alt="Facebook" class="rrss-icon">
-            </a>
-            <a href="https://twitter.com/" target="_blank">
-              <img src="./imgs/iconos rrss/tw.svg" alt="Twitter" class="rrss-icon">
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="./imgs/iconos rrss/instagram.svg" alt="Instagram" class="rrss-icon">
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-              <img src="./imgs/iconos rrss/youtube.svg" alt="Youtube" class="rrss-icon">
-            </a>
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../imgs/menu/logo-invertido.png" alt="Logo Wave Sound"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/comunidad.html">Comunidad</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <div class="d-flex align-items-center">
+                <input
+                  class="form-control me-2 flex-grow-1 mt-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </div>
+            </form>
           </div>
-          <p class="text-center blockquote-footer">
-            © 2023 Copyright: ByDNVC
-          </p>
         </div>
+      </nav>
+    </header>
+    <section id="parallax-product">
+      <div class="bgimg-1">
+        <div class="caption-centered">
+          <span class="border">Sound Pro Run</span>
+        </div>
+      </div>
+      <div class="aboutproduct">
+        <h2>Una batería capaz de seguirte el ritmo las 24 horas.</h2>
+        <p>
+          Los Sound Pro te ofrecen una duración inigualable de 5 horas de audio
+          y hasta 3 horas de conversación con una sola carga. Y como están
+          diseñados para seguirte adonde vayas, su estuche te brinda varias
+          cargas adicionales para que puedas usarlos durante 24 horas.
+          ¿Necesitas cargarlos rápidamente? Ponlos 15 minutos en el estuche y
+          tendrás hasta 3 horas de audio o hasta 2 horas de conversación. Si
+          querés saber cuánta batería te queda, acercá los Sound Pro Run a tu
+          celular (es necesario descargar la Manage Sound App). Cuando se estén
+          quedando sin energía, aparecerá una notificación en la pantalla del
+          celular.
+        </p>
+      </div>
+      <!-- ----------------------------------------- -->
+      <div class="bgimg-2">
+        <div class="caption2">
+          <div class="data">
+            <figure class="badge">
+              <span class="badge-caption">Más de</span>
+              <span class="badge-value">24 h</span>
+              <span class="badge-caption">de batería con el estuche de carga</span>
+            </figure>
+            <figure class="badge">
+              <span class="badge-caption">Hasta</span>
+              <span class="badge-value">5 h</span>
+              <span class="badge-caption">de audio con una sola carga</span>
+            </figure>
+            <figure class="badge">
+              <span class="badge-caption">Sólo</span>
+              <span class="badge-value">15 min</span>
+              <span class="badge-caption">de carga te dan hasta 3 horas de audio</span>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------------------------- -->
+      <div class="bgimg-3">
+        <div class="caption-centered-2">
+          <span class="border">¡Perfectos para vos!</span>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-center text-lg-start">
+      <div class="container">
+        <div class="container d-flex justify-content-center py-5">
+          <a href="https://es-la.facebook.com/" target="_blank">
+            <img
+              src="../imgs/iconos rrss/facebook.svg"
+              alt="Facebook"
+              class="rrss-icon"
+            />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img
+              src="../imgs/iconos rrss/tw.svg"
+              alt="Twitter"
+              class="rrss-icon"
+            />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="../imgs/iconos rrss/instagram.svg"
+              alt="Instagram"
+              class="rrss-icon"
+            />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img
+              src="../imgs/iconos rrss/youtube.svg"
+              alt="Youtube"
+              class="rrss-icon"
+            />
+          </a>
+        </div>
+        <p class="text-center blockquote-footer">© 2023 Copyright: ByDNVC</p>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
