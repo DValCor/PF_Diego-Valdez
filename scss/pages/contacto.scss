@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h2{
+
+    h2 {
         font-size: map-get($font-sizes, 2);
     }
 
@@ -23,11 +24,13 @@
             color: $black-0;
         }
     }
-    .btn-contact-form{
+
+    .btn-contact-form {
         margin-top: 15px;
         background-color: $violet-1;
         border: none;
-        &:hover{
+
+        &:hover {
             background-color: $violet-0;
         }
     }
@@ -40,10 +43,11 @@
             content: url("../imgs/contacto/Banner_Contacto-mobile.jpg");
             background-size: cover;
         }
+
         h1 {
             text-align: center;
         }
-    } 
+    }
 }
 
 .main {

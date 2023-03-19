@@ -226,6 +226,8 @@ body {
     margin-bottom: 100px; }
     .no-parallax h1 {
       font-size: 1rem; }
+    .no-parallax div.container-contact-info {
+      gap: 10px; }
   .bg::after {
     background: url("../imgs/mapa/map_mobile.jpg");
     background-size: cover; }
@@ -281,34 +283,42 @@ body {
   margin: 80px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  justify-content: center; }
   .file-container .file-row {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: flex-start; }
     .file-container .file-row .file {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      align-items: center;
       transition: transform 0.3s ease; }
-      .file-container .file-row .file:hover {
-        transform: scale(1.1);
-        box-shadow: 2px 2px 5px gray; }
-      .file-container .file-row .file img {
-        object-fit: cover;
-        border-radius: 10px 10px 0 0; }
-      .file-container .file-row .file div {
-        width: 60%; }
-      .file-container .file-row .file p {
-        margin: 10px;
-        font-size: 16px;
-        text-align: center;
-        color: #7e57c2;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out; }
-      .file-container .file-row .file:hover p {
-        opacity: 1; }
+    .file-container .file-row img {
+      object-fit: cover;
+      border-radius: 10px 10px 0 0; }
+    .file-container .file-row div {
+      width: 60%; }
+    .file-container .file-row #file-1 p,
+    .file-container .file-row #file-2 p,
+    .file-container .file-row #file-3 p,
+    .file-container .file-row #file-4 p,
+    .file-container .file-row #file-5 p,
+    .file-container .file-row #file-6 p {
+      margin: 10px;
+      font-size: 16px;
+      text-align: center;
+      color: #7e57c2;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out; }
+    .file-container .file-row #file-1:hover p,
+    .file-container .file-row #file-2:hover p,
+    .file-container .file-row #file-3:hover p,
+    .file-container .file-row #file-4:hover p,
+    .file-container .file-row #file-5:hover p,
+    .file-container .file-row #file-6:hover p {
+      opacity: 1; }
 
 /*Mediaquery Banner Comunidad*/
 @media only screen and (max-width: 768px) {
@@ -341,10 +351,19 @@ body {
 
 /*Mediaquery para file-row y file-container en pantallas pequeñas*/
 @media (max-width: 480px) {
-  .file-container, .file-row {
+  .file-container,
+  .file-row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; } }
+    justify-content: center;
+    flex-wrap: wrap; }
+  #file-1 p,
+  #file-2 p,
+  #file-3 p,
+  #file-4 p,
+  #file-5 p,
+  #file-6 p {
+    display: none; } }
 
 .main {
   margin-bottom: 50px; }

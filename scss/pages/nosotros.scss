@@ -74,6 +74,10 @@
     h1 {
       font-size: map-get($font-sizes, 6);
     }
+
+    div.container-contact-info {
+      gap: 10px
+    }
   }
 
   .bg::after {

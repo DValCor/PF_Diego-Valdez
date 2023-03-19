@@ -6,15 +6,17 @@
     padding: 5px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
+
     &:hover {
         background-color: $black-1;
         transform: translateY(-3px);
     }
+
     a {
         text-decoration: none;
         color: $clean-white;
     }
-  }
+}
 
 
 
@@ -52,6 +54,6 @@
 
     .button-black {
         @include button-buy($black-0, $clean-white);
-      }
-        
     }
+
+}
