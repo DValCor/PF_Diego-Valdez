@@ -1,6 +1,6 @@
-.bgimg-1,
-.bgimg-2,
-.bgimg-3 {
+.bgimg1-1,
+.bgimg1-2,
+.bgimg1-3 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -8,18 +8,18 @@
   background-size: cover;
 }
 
-.bgimg-1 {
+.bgimg1-1 {
     background-image: url("../imgs/productos/SoundPro/banner_spw_1.jpg");
     min-height: 100%;
 }
 
-.bgimg-2 {
+.bgimg1-2 {
     background-image: url("../imgs/productos/SoundPro/banner_spw_2.jpg");
     min-height: 100%;
   }
 
-.bgimg-3 {
-    background-image: url("../imgs/productos/SoundPro/banner_spr_3.jpg");
+.bgimg1-3 {
+    background-image: url("../imgs/productos/SoundPro/banner_spw_3.jpg");
     min-height: 100%;
   }
 
@@ -41,7 +41,7 @@
   .caption-centered-2 {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 20%;
     transform: translate(-50%, -50%);
     text-align: center;
     .border {

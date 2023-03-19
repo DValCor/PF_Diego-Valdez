@@ -6,7 +6,6 @@
 }
 
 
-
 /* Media Queries Mobile */
 @media only screen and (max-width: 991px) {
   .carousel-item img.banner-1 {
@@ -18,4 +17,8 @@
   .carousel-item img.banner-3 {
     content: url("../imgs/banner/Banner3_mobile.jpg");
   }
+}
+
+.main {
+  margin-bottom: 50px;
 }
