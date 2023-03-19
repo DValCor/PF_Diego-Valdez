@@ -103,3 +103,25 @@
         }
       }
     }
+
+    /*Mediaquery para pantallas pequeñas*/
+
+    @media only screen and (max-width: 768px) {
+      .bgimg1-1 {
+        content: url("../imgs/productos/SoundPro/banner_spw_mobile1.jpg");
+      }
+    
+      .bgimg1-3 {
+        content: url("../imgs/productos/SoundPro/banner_spw_mobile3.jpg");
+      }
+    
+      .aboutproduct h2 {
+        font-size: map-get($font-sizes, 4);
+      }
+    
+      .badge {
+          border: 1px solid white;
+          border-radius: 0;
+          padding: 20px;
+      }
+    }

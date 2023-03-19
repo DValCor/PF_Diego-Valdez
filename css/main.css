@@ -287,8 +287,6 @@ body {
     display: flex;
     flex-direction: row; }
     .file-container .file-row .file {
-      margin: 20px;
-      width: 500px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -327,7 +325,19 @@ body {
   #com-2-img img {
     content: url("../imgs/banners Community/Banner 2_mobile.png"); }
   #com-3-img img {
-    content: url("../imgs/banners Community/Banner 3_mobile.png"); } }
+    content: url("../imgs/banners Community/Banner 3_mobile.png"); }
+  #file-1 img {
+    content: url("../imgs/banners Community/community_mobile1.png"); }
+  #file-2 img {
+    content: url("../imgs/banners Community/community_mobile2.png"); }
+  #file-3 img {
+    content: url("../imgs/banners Community/community_mobile3.png"); }
+  #file-4 img {
+    content: url("../imgs/banners Community/community_mobile4.png"); }
+  #file-5 img {
+    content: url("../imgs/banners Community/community_mobile5.png"); }
+  #file-6 img {
+    content: url("../imgs/banners Community/community_mobile6.png"); } }
 
 /*Mediaquery para file-row y file-container en pantallas pequeñas*/
 @media (max-width: 480px) {
@@ -466,6 +476,19 @@ body {
         font-weight: 400;
         margin: 5px; }
 
+/*Mediaquery para pantallas pequeñas*/
+@media only screen and (max-width: 768px) {
+  .bgimg-1 {
+    content: url("../imgs/productos/SoundPro/banner_spr_mobile1.jpg"); }
+  .bgimg-3 {
+    content: url("../imgs/productos/SoundPro/banner_spr_mobile3.jpg"); }
+  .aboutproduct h2 {
+    font-size: 1.5rem; }
+  .badge {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 20px; } }
+
 .bgimg1-1,
 .bgimg1-2,
 .bgimg1-3 {
@@ -556,6 +579,19 @@ body {
         font-size: 1.8rem;
         font-weight: 400;
         margin: 5px; }
+
+/*Mediaquery para pantallas pequeñas*/
+@media only screen and (max-width: 768px) {
+  .bgimg1-1 {
+    content: url("../imgs/productos/SoundPro/banner_spw_mobile1.jpg"); }
+  .bgimg1-3 {
+    content: url("../imgs/productos/SoundPro/banner_spw_mobile3.jpg"); }
+  .aboutproduct h2 {
+    font-size: 1.5rem; }
+  .badge {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 20px; } }
 
 .bgimg2-1,
 .bgimg2-2,
@@ -648,6 +684,19 @@ body {
         font-weight: 400;
         margin: 5px; }
 
+/*Mediaquery para pantallas pequeñas*/
+@media only screen and (max-width: 768px) {
+  .bgimg2-1 {
+    content: url("../imgs/productos/SoundPro/banner_mb_mobile1.jpg"); }
+  .bgimg2-3 {
+    content: url("../imgs/productos/SoundPro/banner_mb_mobile3.jpg"); }
+  .aboutproduct h2 {
+    font-size: 1.5rem; }
+  .badge {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 20px; } }
+
 .bgimg3-1,
 .bgimg3-2,
 .bgimg3-3 {
@@ -738,6 +787,19 @@ body {
         font-size: 1.8rem;
         font-weight: 400;
         margin: 5px; }
+
+/*Mediaquery para pantallas pequeñas*/
+@media only screen and (max-width: 768px) {
+  .bgimg3-1 {
+    content: url("../imgs/productos/SoundPro/banner_hc_mobile1.jpg"); }
+  .bgimg3-3 {
+    content: url("../imgs/productos/SoundPro/banner_hc_mobile3.jpg"); }
+  .aboutproduct h2 {
+    font-size: 1.5rem; }
+  .badge {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 20px; } }
 
 .footer {
   background: white;

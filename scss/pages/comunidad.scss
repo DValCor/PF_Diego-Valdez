@@ -74,8 +74,6 @@
         flex-direction: row;
 
         .file {
-            margin: 20px;
-            width: 500px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -119,10 +117,12 @@
         left: 0;
         right: 0;
     }
+    
     .slider {
       width: 100%;
       height: auto;
     }
+
     #com-1-img img {
       content: url('../imgs/banners Community/Banner 1_mobile.png');
     }
@@ -132,10 +132,26 @@
     #com-3-img img {
       content: url('../imgs/banners Community/Banner 3_mobile.png');
     }
+    #file-1 img {
+    content: url('../imgs/banners Community/community_mobile1.png');
+    }
+    #file-2 img {
+        content: url('../imgs/banners Community/community_mobile2.png');
+    }
+    #file-3 img {
+    content: url('../imgs/banners Community/community_mobile3.png');
+    }
+    #file-4 img {
+    content: url('../imgs/banners Community/community_mobile4.png');
+    }
+    #file-5 img {
+    content: url('../imgs/banners Community/community_mobile5.png');
+    }
+    #file-6 img {
+        content: url('../imgs/banners Community/community_mobile6.png');
+    }
   }
   
-
-
   /*Mediaquery para file-row y file-container en pantallas pequeñas*/ 
  
   @media (max-width: 480px) {
@@ -145,6 +161,7 @@
       flex-wrap: wrap;
     }
 }
+
 
 .main {
     margin-bottom: 50px;

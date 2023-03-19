@@ -9,97 +9,126 @@
 }
 
 .bgimg2-1 {
-    background-image: url("../imgs/productos/SoundPro/banner_mb_1.jpg");
-    min-height: 100%;
+  background-image: url("../imgs/productos/SoundPro/banner_mb_1.jpg");
+  min-height: 100%;
 }
 
 .bgimg2-2 {
-    background-image: url("../imgs/productos/SoundPro/banner_mb_2.jpg");
-    min-height: 100%;
-  }
+  background-image: url("../imgs/productos/SoundPro/banner_mb_2.jpg");
+  min-height: 100%;
+}
 
 .bgimg2-3 {
-    background-image: url("../imgs/productos/SoundPro/banner_mb_3.jpg");
-    min-height: 100%;
-  }
+  background-image: url("../imgs/productos/SoundPro/banner_mb_3.jpg");
+  min-height: 100%;
+}
 
-  .caption-centered {
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    .border {
-        color: $black-1;
-        display: inline-block;
-        padding: 18px;
-        font-size: map-get($font-sizes, 2);
-        letter-spacing: 10px;
-    }
-  }
+.caption-centered {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 
-  .caption-centered-2 {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    .border {
-        color: $black-1;
-        display: inline-block;
-        padding: 18px;
-        font-size: map-get($font-sizes, 2);
-        letter-spacing: 10px;
-    }
+  .border {
+    color: $black-1;
+    display: inline-block;
+    padding: 18px;
+    font-size: map-get($font-sizes, 2);
+    letter-spacing: 10px;
   }
+}
 
-  .aboutproduct {
-    color: $black-0;
-    background-color: $clean-white;
-    text-align: center;
+.caption-centered-2 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  .border {
+    color: $black-1;
+    display: inline-block;
+    padding: 18px;
+    font-size: map-get($font-sizes, 2);
+    letter-spacing: 10px;
+  }
+}
+
+.aboutproduct {
+  color: $black-0;
+  background-color: $clean-white;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: center;
+}
+
+.caption2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+
+  .data {
+    position: relative;
     padding: 50px 80px;
-    text-align: center;
-  }
-  
-  .caption2{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    transform: translateY(-50%);
-    .data {
-        position: relative;
-        padding: 50px 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,0) 10%, rgba(0,0,0,0.30015756302521013) 50%, rgba(0,0,0,0) 90%);
-        .badge {
-            &:nth-child(2) {
-                border-left: 1px solid white;
-                border-right: 1px solid white;
-                border-radius: 0;
-                padding: 20px;
-            }
-            color: $clean-white;
-            display: flex;
-            margin: 22px;
-            flex-direction: column;
-            .badge-caption {
-                width: 145px;
-                word-wrap: break-word;
-                white-space: normal;
-                font-size: map-get($font-sizes, 6);
-                font-weight: 100;
-            }
-            .badge-value {
-                font-size: map-get($font-sizes, 3);
-                font-weight: 400;
-                margin: 5px;
-            }
-        }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.30015756302521013) 50%, rgba(0, 0, 0, 0) 90%);
+
+    .badge {
+      &:nth-child(2) {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-radius: 0;
+        padding: 20px;
+      }
+
+      color: $clean-white;
+      display: flex;
+      margin: 22px;
+      flex-direction: column;
+
+      .badge-caption {
+        width: 145px;
+        word-wrap: break-word;
+        white-space: normal;
+        font-size: map-get($font-sizes, 6);
+        font-weight: 100;
+      }
+
+      .badge-value {
+        font-size: map-get($font-sizes, 3);
+        font-weight: 400;
+        margin: 5px;
       }
     }
+  }
+}
+
+/*Mediaquery para pantallas pequeñas*/
+
+@media only screen and (max-width: 768px) {
+  .bgimg2-1 {
+    content: url("../imgs/productos/SoundPro/banner_mb_mobile1.jpg");
+  }
+
+  .bgimg2-3 {
+    content: url("../imgs/productos/SoundPro/banner_mb_mobile3.jpg");
+  }
+
+  .aboutproduct h2 {
+    font-size: map-get($font-sizes, 4);
+  }
+
+  .badge {
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 20px;
+  }
+}
