@@ -60,6 +60,9 @@ body {
   margin-top: 100px;
   margin-bottom: 50px; }
 
+.banner {
+  margin-top: 60px; }
+
 /* Media Queries Mobile */
 @media only screen and (max-width: 991px) {
   .carousel-item img.banner-1 {
@@ -169,81 +172,35 @@ body {
   margin-bottom: 50px; }
 
 /*----NOSOTROS----*/
-.nosotros {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px; }
-  .nosotros section {
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff; }
-  .nosotros .no-parallax {
-    background-color: #7e57c2;
-    z-index: 999; }
-    .nosotros .no-parallax h1 {
-      text-align: center;
-      font-size: 2.4rem; }
-
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1; }
-
-.bg::after {
-  background: url("../imgs/mapa/map_desktop.jpg");
+.parallax {
+  background-image: url("../imgs/mapa/map_desktop.jpg");
+  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover; }
 
-.container-contact-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%; }
-
-.no-parallax.contact-info div {
+.parallax-text {
+  padding-top: 100px;
   text-align: center;
-  width: 511px;
-  gap: 82px; }
-  .no-parallax.contact-info div img {
-    width: 30%;
-    height: auto;
-    margin: 20px; }
+  color: #000000; }
+  .parallax-text h1 {
+    color: #673ab7; }
 
-@media only screen and (max-width: 991px) {
-  .no-parallax {
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-bottom: 100px; }
-    .no-parallax h1 {
-      font-size: 1rem; }
-    .no-parallax div.container-contact-info {
-      gap: 10px; }
-  .bg::after {
-    background: url("../imgs/mapa/map_mobile.jpg");
-    background-size: cover; }
-  .container-contact-info {
-    flex-direction: column; }
-  #map-icon-phone,
-  #map-icon-whatsapp,
-  #map-icon-service {
-    width: 150px; } }
+.content {
+  padding: 50px;
+  text-align: center; }
 
-.main {
-  margin-bottom: 50px; }
+@media screen and (max-width: 768px) {
+  .parallax-text h1 {
+    font-size: 2.1rem; }
+  .parallax-text h3 {
+    font-size: 1.5rem; } }
 
 /*Comunidad*/
 /*Banner Comunidad*/
 .slider {
+  top: 60px;
   position: relative;
   width: 1900px;
   height: 400px;
@@ -280,11 +237,14 @@ body {
 
 /*Main Comunidad*/
 .file-container {
-  margin: 80px 0;
+  margin: 100px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  .file-container > :first-child {
+    margin-bottom: 30px; }
   .file-container .file-row {
+    gap: 100px;
     display: flex;
     flex-direction: row;
     align-items: flex-start; }
@@ -378,6 +338,7 @@ body {
   .contact h2 {
     font-size: 2.1rem; }
   .contact .banner-contact {
+    top: 60px;
     margin: 0 0 20px 0;
     position: relative; }
     .contact .banner-contact h1 {
@@ -387,6 +348,8 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       color: #424242; }
+  .contact .contact-container {
+    margin-top: 80px; }
   .contact .btn-contact-form {
     margin-top: 15px;
     background-color: #673ab7;
@@ -715,6 +678,9 @@ body {
     border: 1px solid white;
     border-radius: 0;
     padding: 20px; } }
+
+#parallax-product {
+  margin-top: 80px; }
 
 .bgimg3-1,
 .bgimg3-2,

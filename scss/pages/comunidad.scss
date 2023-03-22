@@ -2,6 +2,7 @@
 
 /*Banner Comunidad*/
 .slider {
+    top: 60px;
     position: relative;
     width: 1900px;
     height: 400px;
@@ -63,11 +64,15 @@
 
 /*Main Comunidad*/
 .file-container {
-    margin: 80px 0;
+    > :first-child  {
+        margin-bottom: 30px;
+    }
+    margin: 100px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .file-row {
+        gap: 100px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;

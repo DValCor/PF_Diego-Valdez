@@ -1,101 +1,37 @@
 /*----NOSOTROS----*/
 
-.nosotros {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
+.parallax {
+	background-image: url('../imgs/mapa/map_desktop.jpg');
+	height: 80vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-  section {
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $clean-white;
+
+.parallax-text {
+  h1 {
+    color: $violet-1;
   }
+	padding-top: 100px;
+	text-align: center;
+	color: $black-1;
+}
 
-  .no-parallax {
-    background-color: $violet-0;
-    z-index: 999;
+.content {
+	padding: 50px;
+	text-align: center;
+}
 
+
+@media screen and (max-width: 768px) {
+  .parallax-text {
     h1 {
-      text-align: center;
-      font-size: map-get($font-sizes, 1);
+      font-size: map-get($font-sizes, 2);
+    }
+    h3 {
+      font-size: map-get($font-sizes, 4);
     }
   }
-}
-
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1;
-}
-
-.bg::after {
-  background: url("../imgs/mapa/map_desktop.jpg");
-  background-size: cover;
-}
-
-.container-contact-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-}
-
-.no-parallax.contact-info {
-  div {
-    text-align: center;
-    width: 511px;
-    gap: 82px;
-
-    img {
-      width: 30%;
-      height: auto;
-      margin: 20px;
-    }
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .no-parallax {
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-bottom: 100px;
-
-    h1 {
-      font-size: map-get($font-sizes, 6);
-    }
-
-    div.container-contact-info {
-      gap: 10px
-    }
-  }
-
-  .bg::after {
-    background: url("../imgs/mapa/map_mobile.jpg");
-    background-size: cover;
-  }
-
-  .container-contact-info {
-    flex-direction: column;
-  }
-
-  #map-icon-phone,
-  #map-icon-whatsapp,
-  #map-icon-service {
-    width: 150px;
-  }
-}
-
-.main {
-  margin-bottom: 50px;
 }

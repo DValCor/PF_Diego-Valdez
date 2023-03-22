@@ -12,6 +12,7 @@
     }
 
     .banner-contact {
+        top: 60px;
         margin: 0 0 20px 0;
         position: relative;
 
@@ -23,6 +24,10 @@
             transform: translate(-50%, -50%);
             color: $black-0;
         }
+    }
+
+    .contact-container {
+        margin-top: 80px;
     }
 
     .btn-contact-form {

@@ -14,12 +14,10 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="../index.html"><img src="../imgs/menu/logo-invertido.png"
-            alt="Logo Wave Sound"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../index.html"><img src="../imgs/menu/logo-invertido.png" alt="Logo Wave Sound"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
@@ -42,8 +40,8 @@
           </ul>
           <form class="d-flex" role="search">
             <div class="d-flex align-items-center">
-              <input class="form-control me-2 flex-grow-1 mt-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2 flex-grow-1 mt-1 border-0" type="search" placeholder="Search" aria-label="Search"/>
+              <button class="btn btn-outline-success btn-sm mt-2" type="submit"> Buscar </button>
             </div>
           </form>
         </div>
@@ -56,18 +54,18 @@
       <img src="../imgs/contacto/Banner_Contacto-Desktop.jpg" alt="Imagen Mujer Atendiendo Call Center">
     </div>
     <section>
-      <div class="container">
+      <div class="contact-container">
         <h2>Envianos tu mensaje</h2>
       <form class="client-data">
-        <div class="form-group col-12">
+        <div class="form-group col-12 my-2 mb-3">
           <label for="nombre">Nombre y Apellido:</label>
           <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre y Apellido">
         </div>
-        <div class="form-group col-12">
+        <div class="form-group col-12 my-2 mb-3">
           <label for="celular">Celular de contacto:</label>
           <input type="text" id="celular" name="celular" class="form-control" placeholder="Celular de contacto">
         </div>
-        <div class="form-group col-12">
+        <div class="form-group col-12 my-2 mb-3">
           <label for="departamento">Departamento:</label>
           <select id="departamento" name="departamento" class="form-control">
             <option value="artigas">Artigas</option>
@@ -91,7 +89,7 @@
             <option value="treinta-y-tres">Treinta y Tres</option>
           </select>
         </div>
-        <div class="form-group col-12">
+        <div class="form-group col-12 my-2 mb-3">
           <label for="mensaje">Mensaje:</label>
           <textarea id="mensaje" name="mensaje" class="form-control" maxlength="200" placeholder="Escribe tu mensaje aquí"></textarea>
         </div>
