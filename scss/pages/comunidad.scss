@@ -64,13 +64,15 @@
 
 /*Main Comunidad*/
 .file-container {
-    > :first-child  {
+    > :first-child {
         margin-bottom: 30px;
     }
+
     margin: 100px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     .file-row {
         gap: 100px;
         display: flex;
@@ -84,38 +86,38 @@
             align-items: center;
             align-items: center;
             transition: transform 0.3s ease;
+        }
+
+        img {
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        div {
+            width: 60%;
+        }
+
+        #file-1,
+        #file-2,
+        #file-3,
+        #file-4,
+        #file-5,
+        #file-6 {
+            p {
+                margin: 10px;
+                font-size: 16px;
+                text-align: center;
+                color: $violet-0;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
             }
 
-            img {
-                object-fit: cover;
-                border-radius: 10px 10px 0 0;
-            }
-
-            div {
-                width: 60%;
-            }
-
-            #file-1,
-            #file-2,
-            #file-3,
-            #file-4,
-            #file-5,
-            #file-6 {
-                p {
-                    margin: 10px;
-                    font-size: 16px;
-                    text-align: center;
-                    color: $violet-0;
-                    opacity: 0;
-                    transition: opacity 0.3s ease-in-out;
-                }
-    
-                &:hover p {
-                    opacity: 1;
-                }
+            &:hover p {
+                opacity: 1;
             }
         }
     }
+}
 
 /*Mediaquery Banner Comunidad*/
 
@@ -182,18 +184,18 @@
     }
 
     #file-1,
-            #file-2,
-            #file-3,
-            #file-4,
-            #file-5,
-            #file-6 {
-                p {
-                    display: none;
-                }
+    #file-2,
+    #file-3,
+    #file-4,
+    #file-5,
+    #file-6 {
+        p {
+            display: none;
+        }
 
     }
 }
 
 .main {
     margin-bottom: 50px;
-    }
+}

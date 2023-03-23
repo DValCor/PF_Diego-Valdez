@@ -1,37 +1,53 @@
 /*----NOSOTROS----*/
 
-.parallax {
-	background-image: url('../imgs/mapa/map_desktop.jpg');
-	height: 80vh;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+h1 {
+  color: $clean-white;
+  text-align: center;
+  font-family: $secondary-tipography;
+  font-size: map-get($font-sizes, 1);
+  font-weight: 800;
 }
 
-
-.parallax-text {
-  h1 {
-    color: $violet-1;
+.main_container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
   }
-	padding-top: 100px;
-	text-align: center;
-	color: $black-1;
 }
 
-.content {
-	padding: 50px;
-	text-align: center;
+.content_container {
+  position: relative;
+  display: block;
+  background-color: $clean-white;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 390px 0;
+  background: url("../imgs/mapa/map_desktop.jpg");
+  background-repeat: no-repeat;
 }
 
+.parallax_container {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
 
-@media screen and (max-width: 768px) {
-  .parallax-text {
-    h1 {
-      font-size: map-get($font-sizes, 2);
-    }
-    h3 {
-      font-size: map-get($font-sizes, 4);
-    }
-  }
+  background-color: $violet-0;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 768px) {
+  .content_container {
+    content: url("../imgs/mapa/map_mobile.jpg");
+    padding: 0px;
+}
 }
